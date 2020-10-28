@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#f7f7f7</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="progress_green">#85CE1A</color>
+    <color name="progress_gray">#dadada</color>
+    <color name="tab_default">#979797</color>
+    <color name="tab_select">#37A7E1</color>
+    <!--<color name="cor_ff333333">#333333</color>-->
+    <!--<color name="choose_bg_color">#f8f8f8</color>-->
+    <color name="bar_grey">#393a3e</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="blue">#37A7E1</color>
+    <color name="color_main">#19CD82</color>
+    <color name="color_fa">#fafafa</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="color_c51">#f94c51</color>
+    <color name="color_green">#43c117</color>
+    <color name="tick_yellow">#f5d747</color>
+    <color name="tick_gray">#eaeaea</color>
+    <color name="tick_white">#fff</color>
+    <color name="bg_shadow">#cc222222</color>
+    <color name="c333333">#333333</color>
+    <color name="c999999">#ff999999</color>
+    <color name="cFF5625">#FF5625</color>
+    <color name="cE1E1E1">#E1E1E1</color>
+    <color name="F2F2F6">#F2F2F6</color>
+    <color name="c666666">#666666</color>
+    <color name="c37a7e1">#ff37a7e1</color>
+
+</resources>

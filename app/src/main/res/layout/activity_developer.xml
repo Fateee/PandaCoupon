@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="环境选择："/>
+        <RadioButton
+            android:id="@+id/product"
+            android:layout_width="wrap_content"
+            android:text="正式环境"
+            android:checked="true"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:text="测试环境"
+            android:layout_height="match_parent" />
+
+    </RadioGroup>
+</FrameLayout>

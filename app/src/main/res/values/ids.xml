@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- QR Code IDs -->
+    <item type="id" name="auto_focus"/>
+    <item type="id" name="decode"/>
+    <item type="id" name="decode_failed"/>
+    <item type="id" name="decode_succeeded"/>
+    <item type="id" name="encode_failed"/>
+    <item type="id" name="encode_succeeded"/>
+    <item type="id" name="quit"/>
+    <item type="id" name="restart_preview"/>
+    <item type="id" name="bus_type_tag"/>
+
+    <item type="id" name="mapView"/>
+    <item type="id" name="titleBar"/>
+    <item type="id" name="backBtn"/>
+    <item type="id" name="searchBtnLayout"/>
+    <item type="id" name="searchBtn"/>
+    <item type="id" name="confirmBtn"/>
+    <item type="id" name="searchHintLayout"/>
+    <item type="id" name="searchEditLayout"/>
+    <item type="id" name="searchEdit"/>
+    <item type="id" name="searchEditClear"/>
+    <item type="id" name="mapMask"/>
+    <item type="id" name="locationList"/>
+    <item type="id" name="searchList"/>
+
+</resources>

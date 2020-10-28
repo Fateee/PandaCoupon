@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SurfaceView
+        android:id="@+id/qr_code_preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible"/>
+<!--    app:qrcv_barCodeTipText="@string/qr_code_des"-->
+<!--    app:qrcv_qrCodeTipText="@string/qr_code_des"-->
+    <com.panda.coupon.zxing.view.QrCodeFinderView
+        android:id="@+id/qr_code_view_finder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:qrcv_animTime="1000"
+        app:qrcv_barcodeRectHeight="140dp"
+        app:qrcv_borderColor="@color/white"
+        app:qrcv_borderSize="0.5dp"
+        app:qrcv_cornerColor="@color/blue"
+        app:qrcv_cornerLength="33dp"
+        app:qrcv_cornerSize="2dp"
+        app:qrcv_isBarcode="false"
+        app:qrcv_isOnlyDecodeScanBoxArea="true"
+        app:qrcv_isShowDefaultGridScanLineDrawable="true"
+        app:qrcv_isShowDefaultScanLineDrawable="true"
+        app:qrcv_isShowTipBackground="true"
+        app:qrcv_isShowTipTextAsSingleLine="false"
+        app:qrcv_isTipTextBelowRect="false"
+        app:qrcv_maskColor="#99000000"
+        app:qrcv_rectWidth="260dp"
+        app:qrcv_scanLineColor="@color/blue"
+        app:qrcv_tipBackgroundColor="#00000000"
+        app:qrcv_tipTextSize = "14dp"
+        app:qrcv_topOffset = "118dp"
+        app:qrcv_isCenterVertical = "true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/top_layout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/toolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pro_detail_back_icon" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:includeFontPadding="false"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/toolbar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/flash_light_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/flash_light_open_text"
+        android:layout_marginBottom="45dp"
+        android:src="@drawable/open_flash_icon"/>
+    <TextView
+        android:id="@+id/flash_light_open_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qr_code_open_flash"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/flash_light_open"
+        app:layout_constraintRight_toRightOf="@+id/flash_light_open"
+        android:layout_marginBottom="45dp"
+        android:textSize="12dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

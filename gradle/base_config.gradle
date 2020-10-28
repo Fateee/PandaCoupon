@@ -1,0 +1,39 @@
+android {
+
+    compileSdkVersion buildConfig.compile_sdk
+    buildToolsVersion buildConfig.build_tools
+
+    defaultConfig {
+        minSdkVersion buildConfig.min_sdk
+        targetSdkVersion buildConfig.target_sdk
+        versionCode appConfig.ver_code
+        versionName appConfig.ver_name
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_ver"
+    implementation "androidx.core:core-ktx:$androidxConfig.androidx_core_ver"
+    implementation "androidx.appcompat:appcompat:$androidxConfig.androidx_appcompat_ver"
+    implementation "com.google.android.material:material:$google.material_ver"
+    testImplementation "junit:junit:4.+"
+    androidTestImplementation "androidx.test.ext:junit:$androidxConfig.test_junit_ver"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidxConfig.test_espresso_ver"
+}
